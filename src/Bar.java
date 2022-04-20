@@ -32,9 +32,9 @@ public class Bar {
     @Override
     public String toString() {
         return "Bar{" +
-                "barmen=" + barmen +
+                "barmen=" + barmen.getFirstName() +
                 ", address='" + address + '\'' +
-                ", alcoholForDrink=" + alcoholForDrink +
+                ", alcoholForDrink=" + alcoholForDrink.size() + " шт. " +
                 '}';
     }
 

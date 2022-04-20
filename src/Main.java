@@ -31,9 +31,9 @@ public class Main {
         try {
             ObjectMapper objectMapper = new ObjectMapper();
             String jsonStr = objectMapper.writeValueAsString(bar);
-            System.out.println(jsonStr);
+            System.out.println("JSON STR: " + jsonStr);
             Bar bar2 = objectMapper.readValue(jsonStr, Bar.class);
-            System.out.println(bar2);
+            System.out.println("Расшифрованный класс: " + bar2);
 
         } catch (JacksonException e) {
             e.printStackTrace();
